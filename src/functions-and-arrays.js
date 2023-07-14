@@ -1,19 +1,57 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(x,y) {
+    if (x > y){
+      return x
+    }
+    else if(y > x){
+      return y
+    }
+    else {
+      return x,y
+    }
+}
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(array) {
+  if(array.length == 0){
+    return null
+  }
+  if(array[1] == undefined){
+    return array[0] 
+  }
+  if(array.length > array[0]) {
+    return array[0]
+  }
 
+}
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+  if(numbers.length == "") {
+    return 0
+  }
+  else if(numbers.length === 1 ){
+    return numbers[0]
+  }
+  else if(numbers.length === 0 ){
+    return 0
+  }
+  
+
+
+  let number = 0
+  for(i=0;i<numbers.length;i++){
+    number+=numbers[i]
+  }
+  return number
+}
 
 
 
@@ -26,13 +64,32 @@ function sum() {}
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersAvg) {
+  if(numbersAvg == ""){
+    return null
+  }
+  let arrayAvg = 0
+  for(j=0;j<numbersAvg.length;j++){
+    arrayAvg+= numbersAvg[j]
+  }
+  return arrayAvg/numbersAvg.length
+}
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(wordsArr) {
+  if(wordsArr == ""){
+    return null
+  }
+  let WordsArrAvg = 0
+  for(k=0;k<wordsArr.length;k++){
+    WordsArrAvg+= wordsArr[k].length
+  }
+  return WordsArrAvg/wordsArr.length
+ }
+
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -52,8 +109,12 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(wordsUnique) {
+  if(wordsUnique == ""){
+    return null
+  }
 
+}
 
 
 // Iteration #6: Find elements
